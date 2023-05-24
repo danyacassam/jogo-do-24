@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (typeof result === "number") {
         currentResult += result;
       } else {
-        const expression = `(${num1} ${operator1} ${num2}) ${operator2} ${num3} ${operator3} ${num4}`;
+        const expression = `${num1} ${operator1} ${num2} ${operator2} ${num3} ${operator3} ${num4}`;
         if (currentResult) {
           formattedSolution += `${currentResult} ${operator2} ${num3} ${operator3} ${num4} = ${result}\n`;
           currentResult = "";
