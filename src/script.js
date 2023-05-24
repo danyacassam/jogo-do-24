@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         const expression = `(${num1} ${operator1} ${num2}) ${operator2} ${num3} ${operator3} ${num4}`;
         if (currentResult) {
-          formattedSolution += `(${currentResult} ${operator2}) (${num3} ${operator3} ${num4}) = ${result}\n`;
+          formattedSolution += `${currentResult} ${operator2} ${num3} ${operator3} ${num4} = ${result}\n`;
           currentResult = "";
         } else {
           formattedSolution += `${expression}\n = ${result}\n`;
